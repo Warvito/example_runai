@@ -4,7 +4,7 @@
 #
 # $ create_docker_image.sh
 set -ex
-TAG=condldm
+TAG=my_project
 
 docker build --network=host --tag "10.202.67.207:5000/${USER}:${TAG}" . \
   --build-arg USER_ID=$(id -u) \
