@@ -1,4 +1,4 @@
-FROM python:3.9-slim-buster
+FROM nvcr.io/nvidia/pytorch:22.04-py3
 
 ARG USER_ID
 ARG GROUP_ID
