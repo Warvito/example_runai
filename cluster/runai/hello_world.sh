@@ -1,6 +1,6 @@
 runai submit \
   --name test-example \
-  --image 10.202.67.207:5000/wds20:example \
+  --image 10.202.67.207:5000/wds20:example_image \
   --backoff-limit 0 \
   --gpu 1 \
   --cpu 4 \

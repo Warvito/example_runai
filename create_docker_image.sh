@@ -4,9 +4,9 @@
 #
 # $ create_docker_image.sh
 set -ex
-TAG=example
+TAG=example_image
 
-docker build --network=host --tag "10.202.67.207:5000/${USER}:${TAG}" . \
+docker build --network=host --no-cache --tag "10.202.67.207:5000/${USER}:${TAG}" . \
   --build-arg USER_ID=$(id -u) \
   --build-arg GROUP_ID=$(id -g) \
   --build-arg USER=${USER}
