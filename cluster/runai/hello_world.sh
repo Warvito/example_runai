@@ -6,6 +6,7 @@ runai submit \
   --cpu 4 \
   --large-shm \
   --run-as-user \
+  --create-home-dir \
   --host-ipc \
   --project wds20 \
   --volume /nfs/home/wds20/projects/example_runai:/project/ \
