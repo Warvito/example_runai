@@ -1,12 +1,12 @@
 runai submit \
-  --name test-example \
+  --name test-example-without-home \
   --image 10.202.67.207:5000/wds20:example_image \
   --backoff-limit 0 \
   --gpu 1 \
   --cpu 4 \
   --large-shm \
   --run-as-user \
-  --create-home-dir \
+  --create-home-dir 'false' \
   --host-ipc \
   --project wds20 \
   --volume /nfs/home/wds20/projects/example_runai:/project/ \
